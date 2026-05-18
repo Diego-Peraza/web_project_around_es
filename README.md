@@ -5,4 +5,4 @@ La página contiene también un encabezado con el nombre del usuario y un texto 
 Descripción de las tecnologías usadas: La página ha sido creada usando HTML, CSS y JavaScript. Este proyecto en particular ha reforsado el uso de JavaScript y su interactividad con los elementos HTML, sus estilos, y la relación de los mismos en el DOM.
 
 Enlace a Github pages:
-https://github.com/Diego-Peraza/web_project_around_es
+https://diego-peraza.github.io/web_project_around_es/
