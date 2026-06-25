@@ -71,17 +71,35 @@
           <form class="popup__form" id="edit-profile-form">
             <input
               class="popup__input popup__input_type_name"
+              id="name"
               name="name"
               placeholder="Nombre"
               type="text"
+              minlength="2"
+              maxlength="40"
+              required
             />
+            <span
+              class="popup__input_type_name-input-error popup__form_input-error"
+            ></span>
+
             <input
               class="popup__input popup__input_type_description"
+              id="description"
               name="description"
               placeholder="Acerca de mí"
               type="text"
+              minlength="2"
+              maxlength="200"
+              required
             />
-            <button class="button popup__button" type="submit">Guardar</button>
+            <span
+              class="popup__input_type_description-input-error popup__form_input-error"
+            ></span>
+
+            <button class="button popup__button" type="submit" disabled>
+              Guardar
+            </button>
           </form>
         </div>
       </div>
@@ -96,19 +114,33 @@
           <form class="popup__form" id="new-card-form">
             <input
               class="popup__input popup__input_type_card-name"
-              name="place-name"
+              id="card-name"
+              name="card-name"
               placeholder="Título"
               required
               type="text"
+              minlength="2"
+              maxlength="30"
+              required
             />
+            <span
+              class="popup__input_type_card-name-input-error popup__form_input-error"
+            ></span>
             <input
               class="popup__input popup__input_type_url"
-              name="link"
+              id="url"
+              name="url"
               placeholder="Enlace a la imagen"
               required
               type="url"
+              required
             />
-            <button class="button popup__button" type="submit">Crear</button>
+            <span
+              class="popup__input_type_url-input-error popup__form_input-error"
+            ></span>
+            <button class="button popup__button" type="submit" disabled>
+              Crear
+            </button>
           </form>
         </div>
       </div>
