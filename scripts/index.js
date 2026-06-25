@@ -38,6 +38,20 @@ const imagePopupClose = imagePopup.querySelector(".popup__close");
 const imagePopupImage = imagePopup.querySelector(".popup__image");
 const imagePopupCaption = imagePopup.querySelector(".popup__caption");
 
+function closePopupEscKey(element) {
+  function handleEsc(event) {
+    if (event.key === "Escape") {
+      element.forEach((item) => {
+        if (item.classList.contains("popup_is-opened")) {
+          closeModal(item);
+        }
+      });
+      document.removeEventListener("keydown", handleEsc);
+    }
+  }
+  document.addEventListener("keydown", handleEsc);
+}
+
 const popUps = document.querySelectorAll(".popup");
 
 function openModal(element) {
@@ -258,17 +272,3 @@ function closeModalPopups(element) {
 }
 
 closeModalPopups(popUps);
-
-function closePopupEscKey(element) {
-  function handleEsc(event) {
-    if (event.key === "Escape") {
-      element.forEach((item) => {
-        if (item.classList.contains("popup_is-opened")) {
-          closeModal(item);
-        }
-      });
-      document.removeEventListener("keydown", handleEsc);
-    }
-  }
-  document.addEventListener("keydown", handleEsc);
-}
