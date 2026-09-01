@@ -3,7 +3,7 @@ import { FormValidator } from "./FormValidator.js";
 import { openModal, closeModal, setModalEventListeners } from "./utils.js";
 
 const validationConfig = {
-  inputSelector: ".popup__input",
+  inputSelector: "input.popup__input",
   submitButtonSelector: ".popup__button",
   inputErrorClass: "popup__form_input_type_error",
   errorClass: "popup__form_input-error_active",
